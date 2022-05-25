@@ -1,0 +1,367 @@
+$primary_color:#32353C;
+$secondary_color:#B79B6C;
+$gray_color:#6F6F6F;
+$gray2_color:#6A707E;
+$sec_bg:#F9F9F9;
+$gray3_color:#B7B7B7;
+$min-lg: (min-width: 992px);
+$min-md: (min-width: 768px);
+$max-md:( max-width:991px);
+$max-sm:(max-width:767px);
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Lato&family=Roboto:wght@300;400&display=swap');
+.black-button{
+    background-color: $primary_color;
+    border-radius: 3px;
+    border-width: 0px;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+body{
+    overflow-x: hidden;
+    color:$primary_color;
+    font-family: 'Roboto', sans-serif;
+
+      /*--------------START SECTION2-----------*/
+   
+    .section2{
+        background-color: $sec_bg;
+        .container-fluid{
+            div{
+                position: relative;
+                img{
+                    position: absolute;
+                    left:0px;
+                    top:center;
+                    @media #{$min-lg} {
+                        left: 20px;  
+                      }
+                }
+                h5{
+                    margin-left:50px;
+                    @media #{$min-lg} {
+                        margin-left:70px;  
+                      }
+                }
+               
+            }
+            h5{
+                margin-left: 5px;
+               
+                 
+                 
+                }
+            }
+        }
+              /*-------------END SECTION2-----------*/
+
+
+        /*-------------------START COLECTION_AW --------------*/
+        .Collection ,.new-arival{
+            .container-fluid{
+                .Collection-data{
+                   
+                    h1{
+                        span{
+                            font-family: 'Lato', sans-serif;
+                            color:$secondary_color;
+                        }
+                    }
+                    
+                }
+              
+                
+                .Collection-card {
+                    .Collection-img{
+                        position: relative;
+                        img{
+                            
+                            height: auto;
+                        }
+                        h6{
+                            position: absolute;
+                            left:20px;
+                            top: 20px;
+                            right: calc(100% - 90px);
+                            color:white;
+                            background-color: $secondary_color;
+                            width:50px;
+                            z-index: 2;
+                            
+                        }
+                      .button-card{
+                         
+                            position: absolute;
+                            bottom: 5%;
+                            left: 20px;
+                            right:20px;
+                            text-align: center;
+                            font-size: 16px;
+                            font-weight: lighter;
+                            opacity: 0;
+                            
+                           
+                            button{
+                                
+                                    @media #{$max-sm} {
+                                       width: 400px;
+                                       margin: auto;
+
+                                        
+                                       }
+                                
+                                
+                            }
+                          
+                            }
+                        
+                        
+                    }
+                    h6{
+                        font-family: 'Lato', sans-serif;
+                        del{
+                          
+                               color: $gray2_color;
+                              
+                        }
+                    }
+                  
+                transition: all .5s linear;
+                &:hover{
+                 transform: scale(.95);
+                 .button-card{
+    
+                     animation-name: fadeInUp; 
+                     animation-duration: .5s;
+                     animation-fill-mode: forwards;
+                 }              
+                }
+                @media #{$max-md} {
+                    margin-top: 40px;
+                }
+            }
+        }
+      
+    }
+
+
+    /*------------------- END COLECTION_AW --------------*/
+
+/*------------------- START NEW ARIVAL --------------*/
+
+
+
+/*------------------- END NEW ARIVAL --------------*/
+
+/*------------------- START FORM --------------*/
+.form-sec{
+    position: relative;
+   
+    form{
+        background-color: rgba(255, 255, 255, 0.925);
+        position: absolute;
+        right:20%;
+        left:20%;
+        top:15%;
+        bottom: 15%;
+        @media #{$max-md} {
+            position: absolute;
+            right:5%;
+            left:5%;
+            top:5%;
+            bottom: 5%;}
+            @media #{$max-sm} {
+                position: absolute;
+                right:0%;
+                left:0%;
+                top:0%;
+                bottom: 0%;
+                
+            }
+         
+        h1{
+            padding-top:8%;
+           @media #{$max-sm} {
+               padding-top: 8%;
+               font-size: 20px;
+               font-weight: bolder;
+
+           }
+        }
+     
+        
+       
+        div{
+            position: relative;
+            width:75%;
+            margin: auto;
+            
+            input{
+                width: 100%;
+               padding:6px 20px
+                
+            }
+            button{
+                position: absolute;
+                top:0px;
+                right: 0px;
+                bottom:0px;
+                z-index: 2;
+                border-radius: 0px;
+            }
+        }  
+       
+    }
+   
+}
+
+
+/*------------------- END FORM --------------*/
+.share{
+    .owl-carousel{
+        position: relative;
+        .owl-nav{
+         
+          .owl-prev,.owl-next{
+            position: absolute;
+            font-size:30px;
+            font-weight: lighter;
+            top:40%;
+         
+            background-color: rgba(255, 255, 255, 0.404);
+            border-radius: 50%;
+          
+          }
+            }
+           }
+           .owl-carousel{
+    position: relative;
+    .owl-nav{
+     
+      .owl-prev,.owl-next{
+        position: absolute;
+        font-size:30px;
+        font-weight: lighter;
+        top:40%;
+     
+        background-color: rgba(255, 255, 255, 0.404);
+        border-radius: 50%;
+      
+      }
+      
+         
+        }
+      
+    }
+    i{
+        // font-weight: 500;
+        span{
+            font-family:  'Roboto', sans-serif;;
+                color:$primary_color
+        }
+    }
+}
+.mix{
+    color: white;
+    
+    .container-fluid{
+        .row{
+           .imag{
+               position: relative;
+                .img-data{
+                   
+                   background-color:#B79B6C00;
+                    position: absolute;
+                    left:13px;
+                    top:0px;
+                    right:13px;
+                    bottom: 0px;
+                    padding-left: 10%;
+                    padding-top: 10%;
+                    z-index: 3;
+                   
+                    &:hover{
+                        background-color: $secondary_color;
+                    } 
+                }
+               
+                
+            }
+        }
+    }
+}
+.feature{
+    .container-fluid{
+        .row{
+            .box{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    right: 0px;
+                    top:20%;
+                    bottom:15%;
+                    background-color: #D4D4D4;
+                    width: 2px;
+                }
+                &:last-of-type{
+                    &::after{
+                    display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    background-color: $primary_color;
+    color: $gray_color;
+    .container-fluid{
+        .row{
+          .footer-colm{
+              h3{
+                  color:white;
+              }
+              ul{
+                  list-style: none;
+              }
+              li{
+                 margin-left: -30px; 
+              }
+              div{
+                position: relative;
+                width:90%;
+                
+               
+                input{
+                    width: 100%;
+                   padding:6px 10px;
+                   font-size: 14px;
+                    
+                }
+                button{
+                    position: absolute;
+                    top:0px;
+                    right: 0px;
+                    bottom:0px;
+                    z-index: 2;
+                    border-radius: 0px;
+                    width:60px
+                }
+            }  
+
+          }  
+        }
+        hr{
+            margin-left: 3%;;
+        }
+        h6{
+            color: rgba(255, 255, 255, 0.633);
+        }
+    }
+}
+
+}
+
+
